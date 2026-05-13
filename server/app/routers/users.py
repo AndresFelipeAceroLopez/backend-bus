@@ -4,7 +4,7 @@ from app.data.mock_data import MOCK_USERS
 from app.utils.response import success_response
 from datetime import datetime
 
-router = APIRouter(prefix="/api", tags=["users"])
+router = APIRouter(prefix="", tags=["users"])
 
 @router.get("/users/me")
 async def get_me(user_id: str = "user-001"):

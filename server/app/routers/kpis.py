@@ -3,7 +3,7 @@ from app.schemas.base import KPIResponse
 from app.data.mock_data import MOCK_KPIS
 from app.utils.response import success_response
 
-router = APIRouter(prefix="/api/kpis", tags=["kpis"])
+router = APIRouter(prefix="/kpis", tags=["kpis"])
 
 @router.get("")
 async def get_kpis():

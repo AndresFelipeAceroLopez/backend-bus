@@ -4,7 +4,7 @@ from app.schemas.base import BusSchema
 from app.services.bus_service import BusService
 from app.utils.response import success_response
 
-router = APIRouter(prefix="/api", tags=["buses"])
+router = APIRouter(prefix="", tags=["buses"])
 
 @router.get("/buses")
 async def get_buses():

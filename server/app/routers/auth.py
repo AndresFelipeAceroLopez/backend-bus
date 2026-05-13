@@ -3,7 +3,7 @@ from app.schemas.base import UserSchema
 from app.data.mock_data import MOCK_USERS
 from app.utils.response import success_response
 
-router = APIRouter(prefix="/api/auth", tags=["auth"])
+router = APIRouter(prefix="/auth", tags=["auth"])
 
 @router.post("/mock-login")
 async def mock_login(email: str):

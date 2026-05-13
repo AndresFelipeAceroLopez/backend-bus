@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
 
-router = APIRouter(prefix="/api/ratings", tags=["ratings"])
+router = APIRouter(prefix="/ratings", tags=["ratings"])
 
 class RatingCreate(BaseModel):
     userId: str

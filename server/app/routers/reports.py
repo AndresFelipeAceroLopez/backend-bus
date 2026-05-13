@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from app.utils.response import success_response
 
-router = APIRouter(prefix="/api/reports", tags=["reports"])
+router = APIRouter(prefix="/reports", tags=["reports"])
 
 @router.post("/monthly")
 async def generate_monthly_report(period: str):

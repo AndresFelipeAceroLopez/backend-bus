@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
-router = APIRouter(prefix="/api/waitlist", tags=["waitlist"])
+router = APIRouter(prefix="/waitlist", tags=["waitlist"])
 
 class WaitlistCreate(BaseModel):
     userId: str

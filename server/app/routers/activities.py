@@ -4,7 +4,7 @@ from app.data.mock_data import MOCK_ACTIVITIES
 from app.utils.response import success_response
 from datetime import datetime
 
-router = APIRouter(prefix="/api/activities", tags=["activities"])
+router = APIRouter(prefix="/activities", tags=["activities"])
 
 @router.get("")
 async def get_activities():

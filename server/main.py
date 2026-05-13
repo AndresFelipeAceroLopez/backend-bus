@@ -48,7 +48,7 @@ app.include_router(audit.router)
 async def root():
     return {"message": "Welcome to UNICOC Hub STEAM Movil API", "status": "online"}
 
-@app.get("/api/health")
+@app.get("/health")
 async def health_check():
     return {"status": "ok", "mode": settings.APP_MODE}
 

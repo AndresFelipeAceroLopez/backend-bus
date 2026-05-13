@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 import random
 
-router = APIRouter(prefix="/api/ai", tags=["ai"])
+router = APIRouter(prefix="/ai", tags=["ai"])
 
 @router.post("/recommendations")
 async def get_recommendations(userId: str):

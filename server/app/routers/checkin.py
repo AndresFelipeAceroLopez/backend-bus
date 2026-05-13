@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from app.data.mock_data import MOCK_USERS
 
-router = APIRouter(prefix="/api/checkin", tags=["checkin"])
+router = APIRouter(prefix="/checkin", tags=["checkin"])
 
 @router.post("/scan")
 async def scan_qr(qrToken: str):

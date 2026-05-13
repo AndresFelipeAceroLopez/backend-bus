@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-router = APIRouter(prefix="/api/admin/audit", tags=["audit"])
+router = APIRouter(prefix="/admin/audit", tags=["audit"])
 
 @router.get("")
 async def get_audit_logs():

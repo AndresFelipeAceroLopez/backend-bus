@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 import random
 
-router = APIRouter(prefix="/api/sensors", tags=["sensors"])
+router = APIRouter(prefix="/sensors", tags=["sensors"])
 
 @router.get("/{bus_id}")
 async def get_sensors(bus_id: str):

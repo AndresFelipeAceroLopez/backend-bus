@@ -3,7 +3,7 @@ from app.schemas.base import ReservationCreate, ReservationSchema
 from app.services.reservation_service import ReservationService
 from app.utils.response import success_response
 
-router = APIRouter(prefix="/api/reservations", tags=["reservations"])
+router = APIRouter(prefix="/reservations", tags=["reservations"])
 
 @router.post("")
 async def create_reservation(reservation: ReservationCreate):
